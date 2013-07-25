@@ -1,0 +1,239 @@
+<footer>
+  <top>
+      <title>Hear It From Our Customer</title>
+      <links>
+          <link>
+              <id>subfooter-home-1</id>
+              <url>http://www.rackspace.com/customers/posterous</url>
+          </link>
+          <link>
+              <id>subfooter-home-2</id>
+              <url>http://www.rackspace.com/customers/underarmour</url>
+          </link>
+          <link>
+              <id>subfooter-home-3</id>
+              <url>http://www.rackspace.com/customers/mlg</url>
+          </link>
+          <link>
+              <id>subfooter-home-4</id>
+              <url>http://www.rackspace.com/customers/sixflags</url>
+          </link>
+      </links>
+  </top>
+  <noimgcols>
+      <noimgcol>
+          <header>
+              <display>RACKSPACE</display>
+              <url>http://www.rackspace.com/</url>
+          </header>
+          <links>
+              <link>
+                  <display>About Rackspace Hosting</display>
+                  <url>http://www.rackspace.com/information/aboutus</url>    
+              </link>
+              <link>
+                  <display>Fanatical Support&amp;#174;</display>
+                  <url>http://www.rackspace.com/whyrackspace/support</url>
+              </link>
+              <link>
+                  <display>Hosting Solutions</display>
+                  <url>http://www.rackspace.com/hosting_solutions</url>
+              </link>
+              <link>
+                  <display>Web Hosting 101</display>
+                  <url>http://www.rackspace.com/information/hosting101</url>
+              </link>
+              <link>
+                  <display>Hosting Partner Programs</display>
+                  <url>http://www.rackspace.com/partners</url>
+              </link>
+              <link>
+                  <display>OpenStack&amp;#174; </display>
+                  <url>http://www.rackspace.com/cloudbuilders/openstack</url>
+              </link>
+          </links>
+      </noimgcol>
+      <noimgcol>
+          <header>
+              <display>MANAGED HOSTING</display>
+              <url>http://www.rackspace.com/managed_hosting</url>
+          </header>
+          <links>
+              <link>
+                  <display>Managed Configurations</display>
+                  <url>http://www.rackspace.com/managed_hosting/configurations</url>
+              </link>
+              <link>
+                  <display>Managed Private Clouds</display>
+                  <url>http://www.rackspace.com/managed_hosting/private_cloud</url>
+              </link>
+              <link>
+                  <display>Managed Colocation Servers</display>
+                  <url>http://www.rackspace.com/managed_hosting/managed_colocation/</url>
+              </link>              
+              <link>
+                  <display>Dedicated Servers</display>
+                  <url>http://www.rackspace.com/managed_hosting/dedicated_servers</url>
+              </link>
+              <link>
+                  <display>Managed Customers</display>
+                  <url>http://www.rackspace.com/managed_hosting/support/customers</url>
+              </link>
+              <link>
+                  <display>MyRackspace&amp;#174;  Portal</display>
+                  <url>https://my.rackspace.com</url>
+              </link>
+          </links>
+      </noimgcol>
+      <noimgcol>
+          <header>
+              <display>CLOUD HOSTING</display>
+              <url>http://www.rackspace.com/cloud</url>
+          </header>
+          <links>
+              <link>
+                  <display>Cloud Severs&amp;#8482;</display>
+                  <url>http://www.rackspace.com/cloud/cloud_hosting_products/servers</url>
+              </link>
+              <link>
+                  <display>Cloud Sites&amp;#8482;</display>
+                  <url>http://www.rackspace.com/cloud/cloud_hosting_products/sites</url>
+              </link>
+              <link>
+                  <display>Cloud Load Balancers</display>
+                  <url>http://www.rackspace.com/cloud/cloud_hosting_products/loadbalancers</url>
+              </link>
+              <link>
+                  <display>Cloud Files&amp;#8482;</display>
+                  <url>http://www.rackspace.com/cloud/cloud_hosting_products/files</url>
+              </link>
+              <link>
+                  <display>Cloud Hosting Demos</display>
+                  <url>http://www.rackspace.com/cloud/cloud_hosting_demos</url>
+              </link>
+              <link>
+                  <display>Cloud Control Panel</display>
+                  <url>https://manage.rackspacecloud.com/pages/Login.jsp</url>
+              </link>
+              <link>
+                  <display>The Rackspace Open Cloud</display>
+                  <url>https://mycloud.rackspace.com/</url>
+              </link>              
+          </links>
+      </noimgcol>
+      <noimgcol>
+          <header>
+              <display>Email &amp; Apps</display>
+              <url>http://www.rackspace.com/apps</url>
+          </header>
+          <links>
+              <link>
+                  <display>Rackspace Email Hosting</display>
+                  <url>http://www.rackspace.com/apps/email_hosting</url>
+              </link>
+              <link>
+                  <display>Microsoft Hosted Exchange</display>
+                  <url>http://www.rackspace.com/apps/email_hosting/exchange_hosting</url>
+              </link>
+              <link>
+                  <display>Compare Hosted Products</display>
+                  <url>http://www.rackspace.com/apps/email_hosting/compare/</url>
+              </link>
+              <link>
+                  <display>Email Archiving</display>
+                  <url>http://www.rackspace.com/apps/email_hosting/email_archiving</url>
+              </link>
+              <link>
+                  <display>Customer Log-in</display>
+                  <url>http://apps.rackspace.com</url>
+              </link>
+          </links>
+      </noimgcol>      
+  </noimgcols> 
+  <imgcols>
+      <imgcol>
+          <header>
+              <display>Contact Us</display>
+              <url>http://www.rackspace.com/information/contactus</url>
+          </header>
+          <links>
+              <link>
+                  <display>Sales</display>
+                  <class>footerIcon salesIcon</class>
+                  <url></url>
+                  <number>1-800-961-2888</number>                  
+              </link>
+              <link>
+                  <display>Support</display>
+                  <class>footerIcon supportIcon</class>
+                  <url>http://www.rackspace.com/support</url>
+                  <number>1-800-961-4454</number>
+              </link>
+          </links>
+      </imgcol>
+  </imgcols>
+  <imgcols2>
+      <imgcol2>
+          <header>
+              <display>Connect With Us</display>
+              <url>http://www.rackspace.com/information/contactus</url>
+          </header>
+          <links>
+          <link>
+              <class>social linkedin</class>
+              <url>http://www.linkedin.com/company/rackspace-hosting</url>
+          </link>
+          <link>
+              <class>social facebook</class>
+              <url>http://www.facebook.com/rackspacehost</url>
+          </link>
+          <link>
+              <class>social twitter</class>
+              <url>http://twitter.com/rackspace</url>
+          </link>          
+          <link>
+              <class>social linktous</class>
+              <url>http://www.rackspace.com/information/links</url>
+          </link>
+          <link>
+              <class>social email</class>
+              <url>http://www.rackspace.com/forms/contactsales</url>
+          </link>
+          </links>
+      </imgcol2>  
+  </imgcols2>
+  <bottom>
+      <link>
+          <display>About Rackspace</display>
+          <url>http://www.rackspace.com/information/aboutus</url>
+      </link>
+      <link>
+          <display>Fanatical Support&lt;sup&gt;&amp;#174;&lt;/sup&gt;</display>
+          <url>http://www.rackspace.com/whyrackspace/support</url>
+      </link>
+      <link>
+          <display>Hosting Solutions</display>
+          <url>http://www.rackspace.com/hosting_solutions</url>
+      </link>
+      <link>
+          <display>Investors</display>
+          <url>http://ir.rackspace.com</url>
+      </link>
+      <link>
+          <display>Careers</display>
+          <url>http://www.rackertalent.com</url>
+      </link>
+      <link>
+          <display>Privacy Statement</display>
+          <url>http://www.rackspace.com/information/legal/privacystatement</url>
+      </link>
+      <link>
+          <display>Website Terms</display>
+          <url>http://www.rackspace.com/information/legal/websiteterms</url>
+      </link>        
+      <link>
+          <display>Sitemap</display>
+          <url>http://www.rackspace.com/sitemap</url>
+      </link>                         
+  </bottom>
+</footer>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<types>
+    <type>
+        <id>1</id>
+        <displayname>Core Concepts</displayname>   
+        <url>#</url>     
+    </type>
+    <!-- <type> -->
+    <!--     <id>5</id> -->
+    <!--     <displayname>Management API</displayname> -->
+    <!--     <url>/Test2/HelloWorld.html</url>  -->
+    <!-- </type> -->
+    <type>
+        <id>4</id>
+        <displayname>Tutorials</displayname>
+        <url>#</url>         
+    </type>
+    <type>
+        <id>3</id>
+        <displayname>Resources</displayname>
+        <url>#</url>         
+    </type>
+    <type>
+        <id>2</id>
+        <displayname>API Operations</displayname>
+        <url>#</url> 
+    </type>
+
+</types>

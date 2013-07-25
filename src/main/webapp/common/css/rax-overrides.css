@@ -1,0 +1,5 @@
+.syntaxhighlighter table td.code .container{
+	white-space:pre;
+	overflow:visible !important;
+	width:700px !important;
+	}

@@ -1,0 +1,104 @@
+<div id="footer-wrap">
+<div id="fatfooter-wrap">		
+<div class="container_12">
+
+<div class='fatfooter_1 push_0'>
+<div><a href="http://www.rackspace.com/">Rackspace</a></div>
+<ul>
+<li><a href="http://www.rackspace.com/information/aboutus/" class="footer">About Rackspace Hosting</a></li>
+<li><a href="http://www.rackspace.com/whyrackspace/support/" class="footer">Fanatical Support&reg;</a></li>
+<li><a href="http://www.rackspace.com/hosting_solutions/" class="footer">Hosting Solutions</a></li>
+<li><a href="http://www.rackspace.com/information/hosting101/" class="footer">Web Hosting 101</a></li>
+<li><a href="http://www.rackspace.com/partners/" class="footer">Hosting Partner Programs</a></li>
+<li><a href="http://www.rackspace.com/cloudbuilders/openstack/" class="footer">OpenStack&trade;</a></li>
+</ul>
+</div>
+
+<div class='fatfooter_1 push_1'>
+<div><a href="http://www.rackspace.com/managed_hosting/">Managed Hosting</a></div>
+<ul>
+<li><a href="http://www.rackspace.com/managed_hosting/configurations/" class="footer">Managed Configurations</a></li>
+<li><a href="http://www.rackspace.com/managed_hosting/managed_colocation/" class="footer">Managed Colocation Servers</a></li>
+<li><a href="http://www.rackspace.com/managed_hosting/dedicated_servers/" class="footer">Dedicated Servers</a></li>
+<li><a href="http://www.rackspace.com/managed_hosting/support/customers/" class="footer">Managed Customers</a></li>
+<li><a href="https://my.rackspace.com" class="footer" rel="nofollow">MyRackspace&reg; Portal</a></li>
+</ul>
+</div>
+
+<div class='fatfooter_1 push_2'>
+<div><a href="http://www.rackspace.com/cloud/">Cloud Hosting</a></div>
+<ul>
+<li><a href="http://www.rackspace.com/cloud/cloud_hosting_products/servers/" class="footer">Cloud Servers&trade;</a></li>
+<li><a href="http://www.rackspace.com/cloud/cloud_hosting_products/sites/" class="footer">Cloud Sites&trade;</a></li>
+<li><a href="http://www.rackspace.com/cloud/cloud_hosting_products/loadbalancers/" class="footer">Cloud Load Balancers</a></li>
+<li><a href="http://www.rackspace.com/cloud/cloud_hosting_products/files/" class="footer">Cloud Files&trade;</a></li>
+<li><a href="http://www.rackspace.com/cloud/cloud_hosting_demos/" class="footer">Cloud Hosting Demos</a></li>
+<li><a href="https://manage.rackspacecloud.com/pages/Login.jsp" class="footer">Cloud Customer Portal</a></li>
+</ul>
+</div>
+
+<div class='fatfooter_1 push_3'>
+<div><a href="http://www.rackspace.com/apps/">Email &amp; Apps</a></div>
+<ul>
+<li><a href="http://www.rackspace.com/apps/email_hosting/" class="footer">Rackspace Email Hosting</a></li>
+<li><a href="http://www.rackspace.com/apps/email_hosting/exchange_hosting/" class="footer">Microsoft Hosted Exchange</a></li>
+<li><a href="http://www.rackspace.com/apps/email_hosting/compare/" class="footer">Compare Hosted Products</a></li>
+<li><a href="http://www.rackspace.com/apps/email_hosting/email_archiving/" class="footer">Email Archiving</a></li>
+<li><a href="http://apps.rackspace.com/" class="footer">Customer Log-in</a></li>
+</ul>
+</div>
+
+<div class="grid_divider_vertical push_3" style="height: 159px; ">
+	<div class="top part" style="height: 79.5px;"></div>
+	<div class="middle part" style="display: none; height: 1px; "></div>
+	<div class="bottom part" style="height: 79.5px; background-position: -48px -65.5px;"></div>
+<div class="top part"></div><div class="middle part" style="height: 1px; "></div><div class="bottom part"></div>
+</div>
+
+<div class='fatfooter_1 push_4'>
+<div><a href="http://www.rackspace.com/information/contactus/" rel="nofollow">Contact Us</a></div>
+<div><a href=""></a></div>
+
+<div class='column_1'>
+<div class="footerIcon salesIcon"></div>
+<span style="color:#4F81A6;">Sales</span>
+</div>
+
+<div class='column_2'>
+<a>1-800-961-2888</a>
+</div>
+<div class='clear'></div>
+
+<div class='column_1'>
+<a href="http://www.rackspace.com/support/"></a>
+<div class="footerIcon supportIcon"></div>
+<span style="position:relative; color:#4F81A6;">Support</span>
+</div>
+<div class='column_2'>1-800-961-4454</div>
+<div class='clear'></div>
+<br/>
+
+<div><a href="http://www.rackspace.com/information/contactus/" rel="nofollow">Connect With Us</a></div>
+<div><a href=""></a></div>
+<div class='social linkedin' onclick='getURLNewWindow("http://www.linkedin.com/company/rackspace-hosting/")'></div>
+<div class='social facebook' onclick='getURLNewWindow("http://www.facebook.com/rackspacehost")'></div>
+<div class='social twitter' onclick='getURLNewWindow("http://twitter.com/rackspace")'></div>
+<div class='social linktous' onclick='getURLNewWindow("/information/links/")'></div>
+<div class='social email' onclick='getURLNewWindow("/forms/contactsales/")'></div>
+<div class='clear'></div>
+</div>
+
+<div class='clear'></div>			
+</div>			
+<div id="rackerpowered"></div>	
+</div>	
+</div>
+
+
+
+<div id="basement-wrap" class="basement-wrap-nosnap">
+
+	&copy;2012 Rackspace, US Inc.
+	
+	<span class='footerlink'><a href="http://www.rackspace.com/information/aboutus/" class="basement">About Rackspace</a></span> | <span class='footerlink'><a href="http://www.rackspace.com/whyrackspace/support/" class="basement">Fanatical Support&reg;</a></span> | <span class='footerlink'><a href="http://www.rackspace.com/hosting_solutions/" class="basement">Hosting Solutions</a></span> | <span class='footerlink'><a href="http://ir.rackspace.com" class="basement">Investors</a></span> | <span class='footerlink'><a href="http://www.rackertalent.com" class="basement">Careers</a></span> | <span class='footerlink'><a href="http://www.rackspace.com/information/legal/privacystatement/" class="basement">Privacy Statement</a></span> | <span class='footerlink'><a href="http://www.rackspace.com/information/legal/websiteterms/" class="basement">Website Terms</a></span> | <span class='footerlink'><a href="http://www.rackspace.com/sitemap/" class="basement" rel="nofollow">Sitemap</a></span>	
+</div>

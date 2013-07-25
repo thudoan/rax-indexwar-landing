@@ -1,0 +1,955 @@
+ 
+ <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %><div id="navigation-wrap">
+<jsp:useBean id="indexbean" class="com.rackspace.cloud.api.beans.IndexBean"/>
+<%indexbean.setServletCtx(getServletContext());%>
+		
+    <div id="logo-wrap" onclick="getURL('../index.jsp')"></div>
+			
+    <div id="menu-wrap">
+
+    <c:forEach var="theprod" items="${indexbean.prods}">
+        <div class="menuoption" id="menuoption-${theprod.id}">
+        <a href="${theprod.url}" class="menuoption menuoption-off"><c:out value="${theprod.title}"/></a>
+        <div class="arrow"></div>
+        <div class="menu" id="menu-${theprod.id}" style="left: -190px; display: none;">
+        
+        <div class="container_12">
+        <div class="navigation_1">
+        <div class="menu-title">
+        <%-- 
+        <c:out value="${theprod.title}"/>
+        productHeaderTypes size=<c:out value="${indexbean.productHeaderTypesSize}"/>
+        typesSize=<c:out value="${indexbean.typesSize}"/>
+        servletCtx=<c:out value="${message}"/>
+        --%>
+        </div>
+        <br><br>
+        </div>
+        
+        <c:forEach var="prodsmap" items="${indexbean.productEntriesForProdsCategorizedByTypes}">
+        
+            <c:if test="${theprod.id==prodsmap.key}">
+                <c:forEach var="prodheadersmap" items="${prodsmap.value}">              
+                    <div class="navigation_2">
+                    <ul class="navigation">
+                        <li class="heading-link">
+                            <a href="${prodheadersmap.value[0].headerUrl}"><c:out value="${prodheadersmap.key}"/></a>
+                            <div class="arrow"></div>
+                            <div class="clear"></div> 
+                        </li>
+        
+
+                    <c:forEach var="aprodentry" items="${prodheadersmap.value}">
+    
+                            <li class="">
+                                <a href="${aprodentry.typeurl}"><c:out value="${aprodentry.typedisplayname}"/></a>
+                            </li>
+
+                    </c:forEach>
+
+             
+                    </ul>
+                    </div>
+                </c:forEach>
+            </c:if>
+        </c:forEach>
+        
+        
+        </div>
+        </div>
+        </div>
+    </c:forEach>
+			
+	</div>
+</div>
+	
+<!--
+**
+* Hosting Solutions Menu 
+**	
+-->
+<!--  
+
+<div class="menuoption" id="menuoption-hostingsolutions">
+	<a href="/hosting_solutions/" class="menuoption menuoption-off">Hosting Solutions</a>
+	<div class="arrow"></div>
+	<div class="menu" id="menu-hostingsolutions" style="left: -190px; display: none;">
+		<div class="container_12">
+			<div class="navigation_1">
+				<div class="menu-title">
+					Hosting Solutions
+				</div><br>
+				<br>
+			</div>
+		    <div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-link">
+						<a href="/hosting_solutions/">Solutions</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/hosting_solutions/websites/">Corporate Websites</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/hosting_solutions/customapps/">Custom Applications</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/hosting_solutions/ecommerce/">E-commerce Websites</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/hosting_solutions/richmedia/">Rich Media Websites</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/hosting_solutions/testdev/">Test &amp; Development Environments</a>
+						<div class="clear"></div>
+					</li>
+					<li class="heading-link">
+						<a href="/enterprise_hosting/">Enterprise Solutions</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/enterprise_hosting/saas/">Run a SaaS Application</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/enterprise_hosting/hosted_applications/">Host a Business Application</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/enterprise_hosting/campaigns/">Get Extra Capacity for Campaigns</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/enterprise_hosting/sharepoint/">Microsoft SharePoint</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/enterprise_hosting/advisory_services/">Advisory Services</a>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid_divider_vertical" style="height: 457px;">
+				<div class="top part"></div>
+				<div class="middle part" style="height: 167px;"></div>
+				<div class="bottom part"></div>
+			</div>
+			<div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-link">
+						<a href="/hosting_solutions/">Technologies</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/">Cloud Hosting</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/cloud/cloud_hosting_products/servers/">Cloud Servers&trade;</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/cloud/managed_cloud/">Cloud Servers&trade; - Managed</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/cloud/nextgen/">Next Generation Rackspace Cloud</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/cloud/cloud_hosting_products/sites/">Cloud Sites&trade;</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/cloud/cloud_hosting_products/databases/">Cloud Databases</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/cloud/cloud_hosting_products/loadbalancers/">Cloud Load Balancers</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/cloud/cloud_hosting_products/files/">Cloud Files&trade;</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/cloud/cloud_hosting_products/monitoring/">Cloud Monitoring</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/cloud/cloud_hosting_products/dns/">Cloud DNS</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/cloud/private_edition/">Cloud Private Edition</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/managed_hosting/">Managed Hosting</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/managed_hosting/configurations/">Managed Server Configurations</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/managed_hosting/private_cloud/">Private Clouds</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/managed_hosting/managed_colocation/">Managed Colocation Servers</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/managed_hosting/services/proservices/criticalsites/">Rackspace Critical Sites</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/hosting_solutions/hybrid_hosting/">Hybrid Hosting</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/hosting_solutions/hybrid_hosting/rackconnect/">RackConnect&trade;</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps">Email &amp; Apps</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/apps/email_hosting/rackspace_email/">Rackspace Email</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/apps/email_hosting/exchange_hosting/">Microsoft Exchange</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/apps/file_sharing/">File Sharing</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/apps/backup_and_collaboration/">Backup &amp; Collaboration</a>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid_divider_vertical" style="height: 457px;">
+				<div class="top part"></div>
+				<div class="middle part" style="height: 167px;"></div>
+				<div class="bottom part"></div>
+			</div>
+			<div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-link">
+						<a href="/cloud/private_edition/">Cloud Builders</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/private_edition/">Cloud Private Edition</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/private_edition/openstack/">About OpenStack<sup>&reg;</sup></a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/private_edition/training/">Rackspace Training</a>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+
+<!--
+**
+* Cloud Hosting Menu 
+**	
+
+<div class="menuoption" id="menuoption-cloud">
+	<a href="/cloud/" class="menuoption menuoption-off">Cloud Hosting</a>
+	<div class="arrow"></div>
+	<div class="menu" id="menu-cloud" style="display: none; left: -190px;">
+		<div class="container_12">
+			<div class="navigation_1">
+				<div class="menu-title">
+					Cloud Hosting
+				</div><br>
+				<br>
+				<div class="rsOrderButton horizontal" url="https://cart.rackspace.com/cloud/">
+					<a href="https://cart.rackspace.com/cloud/"></a>
+					<div class="side left"></div>
+					<div class="middle">
+						<div class="shopping-cart"></div>Order Now
+					</div>
+					<div class="side right"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="rsSupport" onclick="getURL(&quot;/support/&quot;)">
+					Help &amp; Support
+				</div>
+			</div>
+			<div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-link">
+						<a href="/cloud/cloud_hosting_products/">Cloud Products</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/cloud_hosting_products/">Overview</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/cloud_hosting_products/servers/">Cloud Servers&trade;</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/managed_cloud/">Cloud Servers&trade; - Managed</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/nextgen/">Next Generation Rackspace Cloud</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/cloud_hosting_products/sites/">Cloud Sites&trade;</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/cloud_hosting_products/databases/">Cloud Databases</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/cloud_hosting_products/loadbalancers/">Cloud Load Balancers</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/cloud_hosting_products/files/">Cloud Files&trade;</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/cloud_hosting_products/monitoring/">Cloud Monitoring</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/cloud_hosting_products/dns/">Cloud DNS</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/private_edition/">Cloud Private Edition</a>
+						<div class="clear"></div>
+					</li>
+					<li class="heading-link">
+						<a href="/cloudreseller/">Partner Program</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloudreseller/">Program Overview</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="https://affiliates.rackspacecloud.com/">Cloud Affiliates</a>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid_divider_vertical" style="height: 320px;">
+				<div class="top part"></div>
+				<div class="middle part" style="height: 30px;"></div>
+				<div class="bottom part"></div>
+			</div>
+			<div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-link">
+						<a href="/cloud/cloud_hosting_faq/">Learn More</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/cloud_hosting_faq/">Cloud FAQ</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/who_uses_cloud_computing/">Cloud Customers</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/what_is_cloud_computing/">Cloud Computing?</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/knowledge_center/cloudu/">Cloud University</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/cloud_hosting_demos/">Cloud Demos</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/openstack/">About OpenStack<sup>&reg;</sup></a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/knowledge_center/">Knowledge Center</a>
+						<div class="clear"></div>
+					</li>
+					<li class="heading-link">
+						<a href="/cloud/tools/">Cloud Tools</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid_divider_vertical" style="height: 320px;">
+				<div class="top part"></div>
+				<div class="middle part" style="height: 30px;"></div>
+				<div class="bottom part"></div>
+			</div>
+			<div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-link">
+						<a href="/cloud/aboutus/story/">About</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/aboutus/story/">Our Story</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/aboutus/contact/">Contact Us</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/information/newsroom/">Media</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/aboutus/events/">Events</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="http://www.rackertalent.com/">Jobs</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/information/links/">Link to Us</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/cloud/legal/">Legal</a>
+						<div class="clear"></div>
+					</li>
+					<li class="heading-link">
+						<a href="/blog/channels/cloud-industry-insights/">Blog</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+<!--
+**
+* Managed Hosting Menu 
+**	
+
+<div class="menuoption" id="menuoption-managed">
+	<a href="/managed_hosting/" class="menuoption menuoption-off">Managed Hosting</a>
+	<div class="arrow"></div>
+	<div class="menu" id="menu-managed" style="display: none; left: -190px;">
+		<div class="container_12">
+			<div class="navigation_1">
+				<div class="menu-title">
+					Managed Hosting
+				</div><br>
+				<br>
+				<div class="rsOrderButton horizontal" url="/managed_hosting/configurations/">
+					<a href="/managed_hosting/configurations/"></a>
+					<div class="side left"></div>
+					<div class="middle">
+						<div class="shopping-cart"></div>Order Now
+					</div>
+					<div class="side right"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="rsSupport" onclick="getURL(&quot;/support/&quot;)">
+					Help &amp; Support
+				</div>
+			</div>
+			<div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-link">
+						<a href="/managed_hosting/">Managed Solutions</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/managed_hosting/private_cloud/">Managed Private Clouds</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/managed_hosting/managed_colocation/">Managed Colocation</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/managed_hosting/configurations/">Managed Server Configurations</a>
+						<div class="clear"></div>
+					</li>
+					<li class="heading-link">
+						<a href="/partners/">Partner Program</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid_divider_vertical" style="height: 222px;">
+				<div class="top part" style="height: 111px;"></div>
+				<div class="middle part" style="display: none;"></div>
+				<div class="bottom part" style="height: 111px; background-position: -48px -34px;"></div>
+			</div>
+			<div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-link">
+						<a href="/managed_hosting/dedicated_servers/">Compare Managed</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="heading-link">
+						<a href="/managed_hosting/support/">Support Experience</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/managed_hosting/support/dedicatedteam/">Dedicated Support Teams</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/managed_hosting/support/promise/">The Fanatical Support Promise<sup>&reg;</sup></a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/managed_hosting/support/customers/">Our Customers</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/managed_hosting/support/servicelevels/">Managed Service Levels</a>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid_divider_vertical" style="height: 222px;">
+				<div class="top part" style="height: 111px;"></div>
+				<div class="middle part" style="display: none;"></div>
+				<div class="bottom part" style="height: 111px; background-position: -48px -34px;"></div>
+			</div>
+			<div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-link">
+						<a href="/managed_hosting/services/">Managed Services</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/managed_hosting/services/security/">Managed Security</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/managed_hosting/services/storage/">Managed Storage</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/managed_hosting/services/database/">Managed Databases</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/enterprise_hosting/sharepoint/">Microsoft<sup>&reg;</sup> SharePoint</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/managed_hosting/services/proservices/criticalsites/">Rackspace Critical Sites</a>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+<!--
+**
+* Email and Apps Menu 
+**	
+
+<div class="menuoption" id="menuoption-email">
+	<a href="/apps" class="menuoption menuoption-off">Email &amp; Apps</a>
+	<div class="arrow"></div>
+	<div class="menu" id="menu-email" style="display: none; left: -190px;">
+		<div class="container_12">
+			<div class="navigation_1">
+				<div class="menu-title">
+					Email &amp; Apps
+				</div><br>
+				<br>
+				<div class="rsOrderButton horizontal" url="https://cart.rackspace.com/apps/">
+					<a href="https://cart.rackspace.com/apps/"></a>
+					<div class="side left"></div>
+					<div class="middle">
+						<div class="shopping-cart"></div>Order Now
+					</div>
+					<div class="side right"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="rsSupport" onclick="getURL(&quot;/apps/support/&quot;)">
+					Email Help &amp; Support
+				</div>
+			</div>
+			<div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-link">
+						<a href="/apps">Our Apps</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/email_hosting/">Email Hosting</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/apps/email_hosting/rackspace_email/">Rackspace Email</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/apps/email_hosting/exchange_hosting/">Microsoft Exchange</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/apps/email_hosting/exchange_hybrid/">Exchange Hybrid</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/file_sharing/">File Sharing</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/enterprise_hosting/sharepoint/multitenant/">Microsoft SharePoint</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/backup_and_collaboration/">Backup &amp; Collaboration</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/apps/backup_and_collaboration/online_file_storage/">Rackspace Cloud Drive</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/apps/backup_and_collaboration/data_backup_software/">Rackspace Server Backup</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/apps/email_hosting/email_archiving/">Email Archiving</a>
+						<div class="clear"></div>
+					</li>
+					<li class="heading-label">Admin Tools
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/control_panel/">Control Panel</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/email_hosting/migrations/">Migrations App</a>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid_divider_vertical" style="height: 300px;">
+				<div class="top part"></div>
+				<div class="middle part" style="height: 10px;"></div>
+				<div class="bottom part"></div>
+			</div>
+			<div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-label">Mobile Options
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/email_hosting/rackspace_email/on_your_mobile/">For Rackspace Email</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/email_hosting/exchange_hosting/on_your_mobile/">For Microsoft Exchange</a>
+						<div class="clear"></div>
+					</li>
+					<li class="heading-label">Email Extras
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/email_hosting/compare/">Compare Products</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/email_marketing_solutions/">Email Marketing</a>
+						<div class="clear"></div>
+					</li>
+					<li class="heading-link">
+						<a href="/apps/why_hosted_apps/">Why Rack Apps</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/why_hosted_apps/">Top 10 Reasons</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/whyrackspace/support/">Fanatical Support</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/email_industry_leadership/">History &amp; Expertise</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/customers/">Customer Case Studies</a>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid_divider_vertical" style="height: 300px;">
+				<div class="top part"></div>
+				<div class="middle part" style="height: 10px;"></div>
+				<div class="bottom part"></div>
+			</div>
+			<div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-label">Considering a Switch?
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/email_hosting_service_planning_guide/">Get Your Business Ready</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/email_provider/">Select Your Provider</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/email_hosting/migrations/">Migrate Your Data</a>
+						<div class="clear"></div>
+					</li>
+					<li class="heading-link">
+						<a href="/information/contactus/" rel="nofollow">Connect With Us</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/information/contactus/" rel="nofollow">Contact Us</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="http://feedback.rackspacecloud.com">Product Feedback</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/apps/careers/">Careers</a>
+						<div class="clear"></div>
+					</li>
+					<li class="heading-link">
+						<a href="/partners/">Partner Program</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="heading-link">
+						<a href="/apps/support/">Help &amp; Support</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+<!--
+**
+* Company Menu 
+**	
+
+<div class="menuoption" id="menuoption-rackspace">
+	<a href="/" class="menuoption menuoption-off">Company</a>
+	<div class="arrow"></div>
+	<div class="menu" id="menu-rackspace" style="display: none; left: -190px;">
+		<div class="container_12">
+			<div class="navigation_1">
+				<div class="menu-title">
+					About the Company
+				</div><br>
+				<br>
+			</div>
+			<div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-link">
+						<a href="/whyrackspace/">Why Rackspace</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/whyrackspace/support/">Fanatical Support<sup>&reg;</sup></a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/whyrackspace/network/">Our Network</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/whyrackspace/network/datacenters/">Our Data Centers</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/whyrackspace/network/ipv6/">IPv6 Deployment &amp; Readiness</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/whyrackspace/expertise/">Awards &amp; Expertise</a>
+						<div class="clear"></div>
+					</li>
+					<li class="heading-link">
+						<a href="/partners/">Partner Program</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/partners/">Program Overview</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/forms/partnerapplication/">Partner Application</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="http://rackspacepartner.force.com/us">Partner Portal Login</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/partners/partnersearch/">Partner Locator</a>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid_divider_vertical" style="height: 259px;">
+				<div class="top part" style="height: 129.5px;"></div>
+				<div class="middle part" style="display: none;"></div>
+				<div class="bottom part" style="height: 129.5px; background-position: -48px -15.5px;"></div>
+			</div>
+			<div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-link">
+						<a href="/information/">Information Center</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/information/aboutus/">About Rackspace</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/information/newsroom/">Rackspace Newsroom</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/information/contactus/" rel="nofollow">Contact Information</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/information/aboutus/">Leadership</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/information/hosting101/">Hosting 101</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/information/events/" rel="nofollow">Programs &amp; Events</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/startup/">Rackspace Startup Program</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/information/events/rackgivesback/" rel="nofollow">Rack Gives Back</a>
+						<div class="clear"></div>
+					</li>
+					<li class="sub">
+						<div class="arrow"></div><a href="/information/events/briefingprogram/">Briefing Program</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="http://www.rackertalent.com">Careers</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="http://ir.rackspace.com/phoenix.zhtml?c=221673&amp;p=irol-irhome">Investors</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/information/legal/">Legal</a>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid_divider_vertical" style="height: 259px;">
+				<div class="top part" style="height: 129.5px;"></div>
+				<div class="middle part" style="display: none;"></div>
+				<div class="bottom part" style="height: 129.5px; background-position: -48px -15.5px;"></div>
+			</div>
+			<div class="navigation_2">
+				<ul class="navigation">
+					<li class="heading-label">Blog Community
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="/blog/">The Official Rackspace Blog</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="http://www.rackertalent.com">Racker Talent</a>
+						<div class="clear"></div>
+					</li>
+					<li class="">
+						<a href="http://www.building43.com">Building 43</a>
+						<div class="clear"></div>
+					</li>
+					<li class="heading-link">
+						<a href="/knowledge_center/">Knowledge Center</a>
+						<div class="arrow"></div>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div></div>
+</div>
+-->

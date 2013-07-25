@@ -1,0 +1,391 @@
+div.annotation-content {
+    padding: 10px;
+}
+
+span.legalnoticelink{
+    color:#CCCCCC;
+}
+
+a:link.legalnoticelink{
+	color:#CCCCCC;
+	text-decoration:none;	
+}
+
+a:visited.legalnoticelink{
+	color:#CCCCCC;	
+}
+
+a:hover.legalnoticelink{
+	color:#CCCCCC;	
+	text-decoration:underline;
+}
+
+* {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+#menu-wrap a.menuoption {
+    background-color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-family: arial;
+    font-size: 13px;
+    font-weight: normal;
+    left: 0;
+    padding: 24px 18px 23px 10px;
+    position: relative;
+    text-decoration: none;
+    top: 0;
+}
+#navigation-wrap {
+    height: 100px;
+    left: 52.5%;
+    margin-left: -538px;
+    position: fixed;
+    top: 40px;
+    width: 1109px;
+    z-index: 60;
+    background-color: #FFFFFF;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 5px #000000;
+}
+#navigation-wrap #logo-wrap {
+    background: url("../../imgs/logo-rackspace.png") no-repeat scroll 1px 1px transparent; 
+    cursor: pointer;
+    height: 45px;
+    left: 42px;
+    position: absolute;
+    top: 25px;
+    width: 154px;
+}
+#navigation-wrap #menu-wrap {
+    height: 62px;
+    left: 214px;
+    position: relative;
+    top: 18px;
+    width: 600px;
+}
+.ie7 #navigation-wrap #menu-wrap {
+    left: 10px;
+}
+#menu-wrap a.menuoption {
+    background-color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-family: arial;
+    font-size: 13px;
+    font-weight: normal;
+    left: 0;
+    padding: 24px 18px 23px 10px;
+    position: relative;
+    text-decoration: none;
+    top: 0;
+}
+.ie7 #menu-wrap a.menuoption, .ie8 #menu-wrap a.menuoption {
+    letter-spacing: 0.03em;
+}
+#menu-wrap a.menuoption-off {
+    background-position: 0 -334px;
+    background-color: white;
+    color: #252525;
+}
+#menu-wrap a.menuoption-on {
+    background-position: 0 -399px;
+    background-color: #252525;
+    color: white;
+}
+#menu-wrap a.menuoption .arrow {
+    background-image: url("../../imgs/sprites/global_header.png");
+    height: 7px;
+    position: absolute;
+    right: 8px;
+    top: 28px;
+    width: 8px;
+}
+#menu-wrap a.menuoption-off .arrow {
+    background-position: -104px -60px;
+}
+#menu-wrap a.menuoption-on .arrow {
+    background-position: -114px -60px;
+}
+#menu-wrap div.menu {
+    background: none repeat scroll 0 0 #252525;
+    display: block;
+    left: -10000px;
+    padding: 0 20px 20px;
+    position: absolute;
+    text-align: left;
+    top: 62px;
+    width: 1071px;
+}
+#menu-wrap div.menu-title {
+    color: #757575;
+    font-family: verdana;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+    position: relative;
+    top: 18px;
+}
+#menu-wrap div.rsSupport {
+    background-image: url("../../imgs/global_header.png");
+    background-position: -30px -152px;
+    color: #CCCCCC;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 25px 6px 46px;
+    position: relative;
+    text-transform: uppercase;
+    top: 75px;
+}
+#navigation-wrap #menu-managed div.rsSupport {
+    margin-top: 75px;
+    top: 0;
+}
+#menu-wrap ul.navigation {
+    list-style-type: none;
+    float:left;
+    margin: 0 0 0 30px;
+    padding: 0;
+}
+#menu-wrap li.heading-label, #menu-wrap li.heading-link a, #menu-wrap li.heading-link a:hover, #menu-wrap li a, #menu-wrap li a:hover, #menu-wrap li.sub a, #menu-wrap li.sub a:hover {
+    display: block;
+    position: relative;
+    text-decoration: none;
+		clear:left;
+}
+#menu-wrap li.heading-label, #menu-wrap li.heading-link a, #menu-wrap li.heading-link a:hover {
+    color: #CCCCCC;
+    font-size: 14px;
+    margin: 10px 0 5px;
+    text-transform: uppercase;
+}
+#menu-wrap li a, #menu-wrap li a:hover {
+    color: #4F81A6;
+    font-size: 12px;
+    line-height: 18px;
+}
+#menu-wrap li.singlelist{
+	float:left;
+}
+#menu-wrap li.sub a, #menu-wrap li.sub a:hover {
+    color: #AAAAAA;
+    font-size: 12px;
+    line-height: 18px;
+}
+#menu-wrap li.heading-link a, #menu-wrap li.heading-link a:hover, #menu-wrap li.sub a, #menu-wrap li.sub a:hover {
+    float: left;
+}
+#menu-wrap li a:hover, #menu-wrap li.sub a:hover {
+    text-decoration: underline;
+}
+#menu-wrap li.heading-link .arrow {
+    background: url("../../imgs/global_header.png") repeat scroll -125px -60px transparent;
+    float: left;
+    height: 8px;
+    left: 5px;
+    position: relative;
+    top: 12px;
+    width: 7px;
+}
+#menu-wrap li.sub .arrow {
+    background: url("../../imgs/global_header.png") repeat scroll -132px -60px transparent;
+    float: left;
+    height: 7px;
+    left: 0;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+    width: 4px;
+}
+#navigation-wrap #search-wrap {
+    background: url("../../imgs/sprites/global_header.png") repeat scroll -38px -82px transparent;
+    height: 32px;
+    left: 819px;
+    position: absolute;
+    text-align: left;
+    top: 31px;
+    width: 150px;
+}
+#search, #search-default {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 11px;
+    height: 29px;
+    left: 2px;
+    padding: 0 0 0 5px;
+    position: relative;
+    top: 2px;
+    width: 141px;
+}
+.ie7 #search, .ie7 #search-default, .ie8 #search, .ie8 #search-default {
+    height: 21px;
+    padding: 6px 0 0 5px;
+    width: 136px;
+}
+#search {
+    color: #292929;
+}
+#search-default {
+    color: #AAAAAA;
+}
+#search-wrap .active, #search-wrap .inactive {
+    background-image: url("../../imgs/global_header.png");
+    cursor: pointer;
+    height: 12px;
+    left: 130px;
+    position: absolute;
+    top: 10px;
+    width: 12px;
+}
+#search-wrap .active {
+    background-position: -76px -62px;
+}
+#search-wrap .inactive {
+    background-position: -89px -62px;
+}
+
+#ceiling-wrap {
+    background: url("../../imgs/global_repeatable_backgrounds.png") repeat-x scroll 0 0 transparent;
+    height: 100px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+.ie7 #pocket-container {
+    z-index: 70;
+}
+#ceiling-wrap #pocket-wrap {
+    background: none repeat scroll 0 0 #222222;
+    float: right;
+    height: 40px;
+    position: relative;
+    top: 10px;
+}
+#pocket-wrap {
+    left:150px;	
+}
+#pocket-wrap #pocket-livechat, #pocket-wrap #pocket-supportnumber, #pocket-wrap #pocket-salesnumber, #pocket-wrap #pocket-customerlogin, #pocket-wrap #pocket-countryselect {
+    float: left;
+    position: relative;
+}
+#pocket-wrap #pocket-livechat, #pocket-wrap #pocket-supportnumber, #pocket-wrap #pocket-salesnumber {
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 4px 15px 0 10px;
+    top: 5px;
+}
+#pocket-wrap #pocket-customerlogin, #pocket-wrap #pocket-countryselect {
+    padding-left: 5px;
+    padding-right: 5px;
+    top: 2px;
+    z-index: 70;
+}
+#pocket-wrap #pocket-countryselect {
+    padding-right: 10px;
+}
+#pocket-wrap .pocketitem {
+    display: inline;
+}
+#pocket-wrap .pocketitem-gray {
+    color: #CCCCCC;
+}
+#pocket-wrap a:hover .pocketitem-gray {
+    color: #CCCCCC;
+    text-decoration: underline;
+}
+#pocket-wrap #pocket-livechat .content {
+    cursor: pointer;
+}
+#pocket-wrap #pocket-livechat .disabled {
+    cursor: default;
+    opacity: 0.3;
+}
+#pocket-wrap #pocket-livechat .icon, #pocket-wrap #pocket-supportnumber .icon, #pocket-wrap #pocket-salesnumber .icon {
+    background-image: url("../../imgs/global_header.png");
+    float: left;
+    height: 16px;
+    left: 0;
+    position: relative;
+    top: 0;
+}
+#pocket-wrap #pocket-livechat .icon {
+    background-position: -24px -61px;
+    width: 14px;
+}
+#pocket-wrap #pocket-salesnumber .icon {
+    background-position: -41px -61px;
+    width: 8px;
+}
+#pocket-wrap #pocket-supportnumber .icon {
+    background-position: -52px -62px;
+    width: 16px;
+}
+#pocket-wrap #pocket-livechat .content, #pocket-wrap #pocket-supportnumber .content, #pocket-wrap #pocket-salesnumber .content {
+    float: left;
+    left: 5px;
+    position: relative;
+    top: 1px;
+}
+.pocketitemButton, .pocketitemButtonHover {
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    height: 23px;
+    left: 0;
+    padding: 7px 25px 0 12px;
+    position: relative;
+    top: 0;
+}
+.pocketitemButton {
+    background: url("../../imgs/global_repeatable_backgrounds.png") repeat-x scroll 0 -103px transparent;
+}
+.pocketitemButtonHover {
+    background: url("../../imgs/global_repeatable_backgrounds.png") repeat-x scroll 0 -136px transparent;
+}
+.pocketitemButton .side, .pocketitemButtonHover .side {
+    background-image: url("../../imgs/sprites/global_header.png");
+    height: 30px;
+    position: absolute;
+    width: 2px;
+}
+.pocketitemButton .left, .pocketitemButtonHover .left {
+    left: 0;
+    top: 0;
+}
+.pocketitemButton .left {
+    background-position: -24px -82px;
+}
+.pocketitemButtonHover .left {
+    background-position: -30px -82px;
+}
+.pocketitemButton .right, .pocketitemButtonHover .right {
+    right: 0;
+    top: 0;
+}
+.pocketitemButton .right {
+    background-position: -27px -82px;
+}
+.pocketitemButtonHover .right {
+    background-position: -33px -82px;
+}
+.pocketitemButton .arrow, .pocketitemButtonHover .arrow {
+    background: url("../../imgs/global_header.png") repeat scroll -114px -60px transparent;
+    height: 4px;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+    top: 14px;
+    width: 7px;
+}
+.pocketitemButton .country, .pocketitemButtonHover .country, .countryRedirect .country {
+    display: inline-block;
+    height: 13px;
+    position: relative;
+    top: 2px;
+    width: 20px;
+}
+#pocket-wrap a:link{color:#CCC; text-decoration:none; }
+#pocket-wrap a:hover{color:#CCC; text-decoration:underline; }

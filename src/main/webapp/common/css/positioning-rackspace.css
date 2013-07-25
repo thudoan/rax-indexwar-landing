@@ -1,0 +1,127 @@
+tr th .changed {color: #99ff99; }
+div.added tr, div.added    { background-color: #E6E6FA; }
+div.deleted tr, div.deleted  { text-decoration: line-through;
+               background-color: #FF7F7F; }
+div.changed tr, div.changed  { background-color: #99ff99; }
+div.off      {  }
+
+span.added   { background-color: #E6E6FA; }
+span.deleted { text-decoration: line-through;
+               background-color: #FF7F7F; }
+span.changed { background-color: #99ff99; }
+span.off     {  }
+
+.internal
+	{
+	color : #0000CC;
+	}
+
+.writeronly
+	{
+	color : red;
+	}
+
+.remark, .remark .added, .remark .changed, .remark .deleted{
+	background: yellow;
+	} 
+
+#main-content thead tr td, #main-content thead tr .internal, #main-content thead tr .added, #main-content thead tr .changed
+	{
+
+	color: white;
+	font-weight: bold;
+	text-align: left;
+	}
+
+.statustext{
+    position:fixed;
+    top:105px;
+    width: 0%;
+    height: 0%;
+    opacity: .3;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    white-space: nowrap;
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 30px;
+    }
+
+
+div.note *, div.caution *, div.important *, div.tip *, div.warning *, div.calloutlist * {
+    background: inherit !important;
+    color: inherit !important;
+    border: inherit  !important;    
+}
+
+#main-content .informaltable table thead, #main-content .informaltable table th, #main-content .table table thead, #main-content .table table th{
+    background: gray;
+    color: white;
+    font-weight: bold;
+}
+
+#main-content .informaltable table caption, #main-content .table table caption{
+    font-weight: bold;
+}
+
+#main-content .informaltable table td, #main-content .informaltable  table, #main-content .table table td, #main-content .table  table {
+	border: 1px solid black;
+}
+
+#main-content .informaltable table td, #main-content .informaltable table th, #main-content .table table td, #main-content .table table th {
+	padding: 5px;
+}
+
+#main-content .informaltable table {
+	margin-bottom: 20px;
+}
+
+*[align = 'center']{
+    text-align: center;
+}
+
+/* tildehash stuff */
+
+form td, form table{
+    border: inherit !important;
+}
+
+#cmtfont {
+   font-size: 18px;
+   padding: 4px 0px 0px 3px;
+   display: inline-block;
+}
+
+#cmtdiv {
+   padding: 2px 4px 4px 4px;
+   margin: 2px 0px 0px 0px;
+   border: 2px solid #707070;
+   background-color: #F5F5F9;
+   -moz-border-radius: 8px 8px 8px 8px;
+   -webkit-border-radius: 8px 8px 8px 8px;
+   border-radius: 8px 8px 8px 8px;
+   text-align: left;
+}
+
+#cmtnumber {
+   font-size: 18px;
+   padding: 2px 0px 0px 4px;
+   font-family: helvetica;
+}
+
+#cmtdate {
+   float: right;
+   position: relative;
+   font-style: italic;
+   top: 6px;
+}
+
+#cmtopts {
+   padding: 3px;
+   background-color: #E4E4E4;
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   border-radius: 4px;
+}

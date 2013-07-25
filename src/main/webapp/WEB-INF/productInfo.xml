@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<products>
+    <product>
+        <id>1</id>
+        <name>CLOUD SERVERS</name>
+         <title>Cloud Servers</title>
+         <author>Author 2</author>
+         <description>
+             The next generation Cloud Servers powered by OpenStack is a fast, reliable, and scalable cloud compute solution. A more responsive API makes automating common tasks easier.
+         </description>
+         <copyright>2012</copyright>
+         <icon1>imgs/cloudserversicon.png</icon1>
+         <icon2>imgs/cloudservers.png</icon2>
+         <url>http://www.rackspace.com/cloud/cloud_hosting_products/servers/</url>
+         <mousedown>cloudservers</mousedown>
+    </product>
+    <product>
+        <id>5</id>
+        <name>CLOUD FILES</name>
+         <title>Cloud Files</title>
+         <author>Author 2</author>
+         <description>
+	   Rackspace Cloud Files is an easy-to-use online object storage solution for files and media which can be delivered globally over Akamai's content delivery network (CDN).
+         </description>
+         <copyright>2012</copyright>
+         <icon1>imgs/cloudfiles.png</icon1>
+         <icon2>imgs/cloudfiles.png</icon2>
+         <url>http://www.rackspace.com/cloud/cloud_hosting_products/files/</url>
+         <mousedown>cloudfiles</mousedown> 
+    </product>
+    <product>
+        <id>2</id>
+        <name>CLOUD DATABASES</name>
+         <title>Cloud Databases</title>
+         <author>Author 2</author>
+         <description>
+	   High-performance MySQL databases in the cloud. Built-in redundancy and automated configuration are included so you don't have to manage these time-consuming tasks.
+         </description>
+         <copyright>2012</copyright>
+         <icon1>imgs/clouddatabasesicon.png</icon1>
+         <icon2>imgs/clouddatabases.png</icon2>
+         <url>http://www.rackspace.com/cloud/cloud_hosting_products/databases/</url>   
+         <mousedown>clouddatabases</mousedown>      
+    </product>
+    <product>
+        <id>6</id>
+        <name>CLOUD LOADBALANCERS</name>
+         <title>Cloud Loadbalancers</title>
+         <author>Author 2</author>
+         <description>
+	   Get reliable failover for high-traffic sites and applications, with Rackspace load balancers for cloud and dedicated servers. If you add a managed service level, we'll also deploy and configure your load balancers for you.
+         </description>
+         <copyright>2012</copyright>
+         <icon1>imgs/cloudloadbalancers.png</icon1>
+         <icon2>imgs/cloudloadbalancers.png</icon2>
+         <url>http://www.rackspace.com/cloud/cloud_hosting_products/loadbalancers/</url>
+         <mousedown>blockstorage</mousedown> 
+    </product>
+    <product>
+        <id>8</id>
+        <name>CLOUD DNS</name>
+         <title>Cloud DNS</title>
+         <author>Author 2</author>
+         <description>
+	   Easily manage domains, subdomains, and DNS records using our API-based Cloud DNS platform. We can also configure DNS for your dedicated servers.
+         </description>
+         <copyright>2012</copyright>
+         <icon1>imgs/clouddns.png</icon1>
+         <icon2>imgs/clouddns.png</icon2>
+         <url>http://www.rackspace.com/cloud/cloud_hosting_products/dns/</url>
+         <mousedown>cloudfiles</mousedown> 
+    </product>
+    <product>
+        <id>3</id>
+        <name>CLOUD MONITORING</name>
+         <title>Cloud Monitoring</title>
+         <author>Author 2</author>
+         <description>
+	   Our new Cloud Monitoring service lets you stay on top of your infrastructure by receiving alerts anytime your websites, ports, or protocols need attention. We also provide monitoring for dedicated servers.             
+         </description>
+         <copyright>2012</copyright>
+         <icon1>imgs/monitoringicon.png</icon1>
+         <icon2>imgs/cloudmonitoring.png</icon2>
+         <url>http://www.rackspace.com/cloud/cloud_hosting_products/monitoring/</url>
+         <mousedown>monitoring</mousedown>    
+    </product>
+    <!-- <product> -->
+    <!--     <id>4</id> -->
+    <!--     <name>BLOCK STORAGE</name> -->
+    <!--      <title>Block Storage</title> -->
+    <!--      <author>Author 2</author> -->
+    <!--      <description> -->
+    <!--          The next generation Block Storage powered by OpenStack is a fast, reliable, and scalable cloud compute solution. A more responsive API makes automating common tasks easier. -->
+    <!--      </description> -->
+    <!--      <copyright>2012</copyright> -->
+    <!--      <icon1>imgs/cloudstorage.png</icon1> -->
+    <!--      <icon2>imgs/cloudstorage.png</icon2> -->
+    <!--      <url>/Test2/HelloWorld.html</url> -->
+    <!--      <mousedown>blockstorage</mousedown>  -->
+    <!-- </product> -->
+    <product>
+        <id>7</id>
+        <name>CLOUD IDENTITY</name>
+         <title>Cloud Identity</title>
+         <author>Author 2</author>
+         <description>Authenticate and manage access to Rackspace cloud products through Cloud Identity.</description>
+         <copyright>2012</copyright>
+         <icon1>imgs/cloudidentity.png</icon1>
+         <icon2>imgs/cloudidentity.png</icon2>
+         <url>#</url>
+         <mousedown>cloudfiles</mousedown> 
+    </product>                        
+</products>
